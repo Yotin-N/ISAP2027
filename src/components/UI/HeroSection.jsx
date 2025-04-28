@@ -11,8 +11,6 @@ import Container from "@mui/material/Container";
  * @param {boolean} props.isHomePage
  */
 function HeroSection({ title, subtitle, backgroundImageUrl, isHomePage }) {
-  const bgImage =
-    backgroundImageUrl || (isHomePage ? null : "../../assets/submenu-bg.jpg");
   return (
     <Box
       sx={{
@@ -20,10 +18,9 @@ function HeroSection({ title, subtitle, backgroundImageUrl, isHomePage }) {
         height: isHomePage ? "60vh" : "25vh",
         minHeight: isHomePage ? 300 : 150,
         backgroundColor: isHomePage ? "primary.dark" : "primary.main",
-        backgroundImage:
-          isHomePage && backgroundImageUrl
-            ? `url(${backgroundImageUrl})`
-            : "none",
+        backgroundImage: backgroundImageUrl
+          ? `url(${backgroundImageUrl})`
+          : "none",
         backgroundSize: "cover",
         backgroundPosition: "center",
         position: "relative",

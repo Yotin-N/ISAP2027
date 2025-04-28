@@ -144,7 +144,7 @@ function App() {
             }
             subtitle={
               isHomePage
-                ? "NOV. 9 (TUESDAY) - 12 (FRIDAY), 2027 • PATTAYA, THAILAND"
+                ? "NOV 9 TUESDAY - 12 FRIDAY, 2027 PATTAYA, THAILAND"
                 : null
             }
             backgroundImageUrl={isHomePage ? pattayaBg : submenuBg}
